@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <title>SKIT Parking System</title>
+    <script src="./Script/app.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>SKIT Parking System</h1>
+    </header>
+    <main>
+        <div>
+            <form id="user registeration">
+                <h1>User Registeration</h1>
+                <label >User Name : </label><input id="userName" type="text" placeholder="Name" pattern="[a-z A-Z]+" required >
+                <label >Contact : </label><input id="userContact" type="text" placeholder="Contact Number" pattern="[0-9]{10}" required>
+                <div id="gender">
+                    <label>Gender : </label>
+                    <select id="userGender">
+                        <option selected disabled>--Select Type--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <label>Role :</label>
+                <select id="userRole">
+                    <option selected disabled>--Select Type--</option>
+                    <option value="student">Student</option>
+                    <option value="faculty">Faculty</option>
+                </select>
+                <input type="submit" value="Register" id="userSubmitButton">
+            </form>
+        </div>
+
+        <div>
+            <form id="vehicle registeration">
+                <h1>Vehicle Registeration</h1>
+                <label>Vehicle Number : </label><input id="vehicleNumber" type="text" placeholder="Ex: RJ14 CP 6911" required pattern="[A-Z]{2}[0-9]{2} [A-Z]{2} [0-9]{4}">
+                <label>Type: </label>
+                <select id="vehicleType">
+                    <option selected disabled>--Select Type--</option>
+                    <option value="cycle">Cycle</option>
+                    <option value="motorcycle">Motor Cycle</option>
+                    <option value="car">Car</option>
+                </select>
+                <input type="submit" value="Add" id="vehicleSubmitButton">
+            </form>
+        </div>
+        <div>
+            <form id="passChoice">
+             
+            </form>
+        </div>
+        <div id="ticket">
+           <div id="printPass">
+
+           </div>
+           <div id="qrCode">
+
+           </div>
+        </div>
+        <div id="qrCode">
+
+        </div>
+    </main>
+    <footer>
+        &copy; Copyrght | SKIT
+    </footer>
+</body>
+</html>
